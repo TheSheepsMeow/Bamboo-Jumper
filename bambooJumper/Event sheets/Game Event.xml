@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Event</name>
+    <events>
+        <variable constant="0" name="Score" sid="868779732750923" static="0" type="number">0</variable>
+        <event-block sid="257814396429386">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="103102452431853" type="player">
+                    <param id="0" name="Object">BarriorLeft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="841810112779393" type="Sprite6" />
+                <action id="0" name="Play" sid="960615222604224" type="Audio">
+                    <param id="0" name="Audio file">DeathSound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="136952579084378" type="player" />
+                <action id="0" name="Spawn another object" sid="636304704855974" type="player">
+                    <param id="0" name="Object">Particles2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="431699754758640" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="592993915905655" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="768373541869400">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="695743050751293" type="player">
+                    <param id="0" name="Object">BarriorRight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="128801973116367" type="Sprite6" />
+                <action id="0" name="Play" sid="983687520909783" type="Audio">
+                    <param id="0" name="Audio file">DeathSound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="753072587144643" type="player" />
+                <action id="0" name="Spawn another object" sid="246665194100826" type="player">
+                    <param id="0" name="Object">Particles2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="347818394835177" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="266949182659817" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365059108974206">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="929555808511226" type="player">
+                    <param id="0" name="Object">BarriorMid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="407400257017979" type="Sprite6" />
+                <action id="0" name="Play" sid="926408252469848" type="Audio">
+                    <param id="0" name="Audio file">DeathSound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="500390204012776" type="player" />
+                <action id="0" name="Spawn another object" sid="410310077895551" type="player">
+                    <param id="0" name="Object">Particles2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="938815487512978" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="180448903780811" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="983708365506231">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="132769134307477" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BambooLeft</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="229131067128715" type="player">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="594925855873451" type="Audio">
+                    <param id="0" name="Audio file">Leftbamboo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="620995696118766" type="jumper" />
+                <action id="-3" name="Create object" sid="247699736885721" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">39</param>
+                    <param id="3" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="949153265978543" type="player">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="8" name="Set flipped" sid="373885242181672" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="500160516587491">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="751220973245783" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BambooRight</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="642649525343189" type="player">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="257099218721061" type="Audio">
+                    <param id="0" name="Audio file">Rightbamboo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="104943250343635" type="jumper" />
+                <action id="-3" name="Create object" sid="773963336871881" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">598</param>
+                    <param id="3" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="985521168426635">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="540692749285060" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="130666231454831" type="player">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="304621625365874" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="820192126324971" type="Audio">
+                    <param id="0" name="Audio file">Midbamboo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="973642806978110" type="jumper" />
+                <action id="-3" name="Create object" sid="401877834652233" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">355</param>
+                    <param id="3" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="631212579303215">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="865833645061480" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="159760561665456" type="player">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="789328540903164" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="249100543866234" type="Audio">
+                    <param id="0" name="Audio file">Midbamboo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="618786247803630" type="jumper" />
+                <action id="-3" name="Create object" sid="862016860230330" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">282</param>
+                    <param id="3" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="294341212584137" type="player">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="8" name="Set flipped" sid="734907869119188" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101749222130325">
+            <conditions>
+                <condition id="17" name="On tap object" sid="499461242710717" type="Touch">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="113602490436681" type="player">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="402846238863437" type="jumper" />
+                <action id="-3" name="Create object" sid="351781731614227" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">39</param>
+                    <param id="3" name="Y">Touch.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="753389742606666" type="player">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="8" name="Set flipped" sid="858578286323992" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="446665861042314">
+            <conditions>
+                <condition id="17" name="On tap object" sid="901306050111194" type="Touch">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="412169563321381" type="player">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="593410728032483" type="jumper" />
+                <action id="-3" name="Create object" sid="154080787300983" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">598</param>
+                    <param id="3" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="571596231577463">
+            <conditions>
+                <condition id="17" name="On tap object" sid="250108080631945" type="Touch">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="567028175192161" type="player">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="176697603893387" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="390498050244052" type="jumper" />
+                <action id="-3" name="Create object" sid="718718402315060" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">355</param>
+                    <param id="3" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504695912790947">
+            <conditions>
+                <condition id="17" name="On tap object" sid="354329001480085" type="Touch">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="620397836559627" type="player">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="921829415188065" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="639745995113148" type="jumper" />
+                <action id="-3" name="Create object" sid="420728436406199" type="System">
+                    <param id="0" name="Object to create">jumper</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">282</param>
+                    <param id="3" name="Y">Touch.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="595023720345857" type="player">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="8" name="Set flipped" sid="435792055318182" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="311496826563061">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="105783557265704" type="System">
+                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="168303719995051" type="Spawnerleft">
+                    <param id="0" name="Object">BarriorLeft</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498667852624315">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="899271828216387" type="System">
+                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="786047856056505" type="spawnerMid">
+                    <param id="0" name="Object">BarriorMid</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388718226135379">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="482297004252310" type="System">
+                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="858481035151522" type="SpawnerRight">
+                    <param id="0" name="Object">BarriorRight</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878713586566072">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="758019800319221" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="347063840524897" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="710416435923294" type="Score">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731879888937067">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="358904535994268" type="BarriorLeft">
+                    <param id="0" name="Object">destroyer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="531408845377008" type="BarriorLeft" />
+            </actions>
+        </event-block>
+        <event-block sid="535688636426897">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="117984074683545" type="BarriorMid">
+                    <param id="0" name="Object">destroyer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="698808007816658" type="BarriorMid" />
+            </actions>
+        </event-block>
+        <event-block sid="649856134513678">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="340177821010962" type="BarriorRight">
+                    <param id="0" name="Object">destroyer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="711037318694065" type="BarriorRight" />
+            </actions>
+        </event-block>
+        <event-block sid="574597718783888">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="673061858252544" type="System" />
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="662987483188633" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="897436666724917" type="player">
+                    <param id="0" name="Distance">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="296513419639877">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="329984939908547" type="System" />
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="319645353519505" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="0" name="Acquire target" sid="878321437304675" type="player">
+                    <param id="0" name="Target">jumper</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431430769258641">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="711450935496537" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="423851933906207" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="753277856749919" type="player">
+                    <param id="0" name="Angle">0</param>
+                </action>
+                <action id="8" name="Set flipped" sid="470207549008863" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="432611160607320">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="425742533016410" type="System" />
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="325757242770416" type="TiledBackground">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="423481791273750" type="TiledBackground2">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="484687018993002" type="TiledBackground3">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="768009273080919" type="TiledBackground4">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="741722827407933" type="TiledBackground5">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486865865297900">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="919864605065072" type="System">
+                    <param id="0" name="Interval (seconds)">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="805926814501076" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="214852282021773" type="System">
+                    <param id="0" name="Object to create">TiledBackground</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-3</param>
+                    <param id="3" name="Y">-1706</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="839167349863861">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="316243758971453" type="System">
+                    <param id="0" name="Interval (seconds)">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="860118497717244" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="833195338862865" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="603983995003659" type="System">
+                    <param id="0" name="Object to create">TiledBackground2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-3</param>
+                    <param id="3" name="Y">-1706</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949520990681817">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="341371747712528" type="System">
+                    <param id="0" name="Interval (seconds)">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="375363486876330" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">2000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="544495086393246" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">3000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="876037922576387" type="System">
+                    <param id="0" name="Object to create">TiledBackground3</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-3</param>
+                    <param id="3" name="Y">-1706</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="418556305325898">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="907439735329231" type="System">
+                    <param id="0" name="Interval (seconds)">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="642238345689955" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3000</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="794475538741583" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">4000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="830055989176852" type="System">
+                    <param id="0" name="Object to create">TiledBackground4</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-3</param>
+                    <param id="3" name="Y">-1706</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="424944207834908">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="403346288771096" type="System">
+                    <param id="0" name="Interval (seconds)">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="369660292219344" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">4000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="128188439737055" type="System">
+                    <param id="0" name="Object to create">TiledBackground5</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-3</param>
+                    <param id="3" name="Y">-1706</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="544315159330309">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="471561774827318" type="TiledBackground">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">438</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="462909710335883" type="TiledBackground">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363231731519411">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="153860540175102" type="TiledBackground2">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">438</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="648970264008139" type="TiledBackground2">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425150942989533">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="728286580448950" type="TiledBackground3">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">438</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="255177869186424" type="TiledBackground3">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448691207663665">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="367872786268800" type="TiledBackground4">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">438</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="289226133488620" type="TiledBackground4">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="373137226613711">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="874854901692915" type="TiledBackground5">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">438</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="947589207741672" type="TiledBackground5">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="258796277154735">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="200208277602805" type="TiledBackground">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="692714729562123" type="TiledBackground" />
+            </actions>
+        </event-block>
+        <event-block sid="141377113161199">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="148154738683842" type="TiledBackground2">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="789350954762566" type="TiledBackground2" />
+            </actions>
+        </event-block>
+        <event-block sid="124322579706566">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="809167520277464" type="TiledBackground3">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="277294956956246" type="TiledBackground3" />
+            </actions>
+        </event-block>
+        <event-block sid="534052149794071">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="430493867800323" type="TiledBackground4">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="468319896645007" type="TiledBackground4" />
+            </actions>
+        </event-block>
+        <event-block sid="129856874661812">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="302290870982518" type="TiledBackground5">
+                    <param id="0" name="Instance variable">disroy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="855102594965154" type="TiledBackground5" />
+            </actions>
+        </event-block>
+        <event-block sid="392346517554166">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="412519969885355" type="System">
+                    <param id="0" name="Interval (seconds)">0.101</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="892333740782415" type="player">
+                    <param id="0" name="Object">BambooLeft</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="350146706529278" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="745602445359739" type="jumper">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="884002300378897" type="player">
+                    <param id="0" name="X">78</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154807176403451">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="584010189531803" type="System">
+                    <param id="0" name="Interval (seconds)">0.101</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="336557561593690" type="player">
+                    <param id="0" name="Object">BambooRight</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="642567794521850" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="155930462643925" type="jumper">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">598</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="448090723551634" type="player">
+                    <param id="0" name="X">560</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="129513241474964">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="183993345828763" type="System">
+                    <param id="0" name="Interval (seconds)">0.101</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="212968015671173" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="667660367038914" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="391560037404883" type="jumper">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">282</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="229652709717921" type="player">
+                    <param id="0" name="X">317</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969574893160675">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="319379397952336" type="System">
+                    <param id="0" name="Interval (seconds)">0.101</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="505821794412779" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="384914957414236" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="674940127011907" type="jumper">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">282</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="136230737107630" type="player">
+                    <param id="0" name="X">317</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="386887699321203">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="133209129330798" type="System">
+                    <param id="0" name="Interval (seconds)">0.101</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="711449905216688" type="player">
+                    <param id="0" name="Object">BambooMid</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="558884527608459" type="player">
+                    <param id="0" name="Object">jumper</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="904605926898181" type="jumper">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">355</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="469420905051139" type="player">
+                    <param id="0" name="X">317</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="651550053850208">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="708462602705294" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" disabled="1" sid="634188645321375">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="631171278503241" type="player">
+                            <param id="0" name="Object">BambooLeft</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="883607445457204" type="player">
+                            <param id="0" name="Object">BambooMid</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="649748636807680" type="player">
+                            <param id="0" name="Object">BambooLeft</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="687566657807502" type="player">
+                            <param id="0" name="Object">jumper</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
