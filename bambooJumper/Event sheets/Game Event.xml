@@ -4,6 +4,7 @@
     <name>Game Event</name>
     <events>
         <variable constant="0" name="Score" sid="868779732750923" static="0" type="number">0</variable>
+        <comment></comment>
         <event-block sid="257814396429386">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="103102452431853" type="player">
@@ -88,15 +89,16 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="983708365506231">
             <conditions>
                 <condition id="6" name="On object clicked" sid="132769134307477" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BambooLeft</param>
+                    <param id="2" name="Object clicked">BambooL</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="229131067128715" type="player">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
             </conditions>
             <actions>
@@ -126,10 +128,10 @@
                 <condition id="6" name="On object clicked" sid="751220973245783" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BambooRight</param>
+                    <param id="2" name="Object clicked">BambooR</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="642649525343189" type="player">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
             </conditions>
             <actions>
@@ -153,13 +155,13 @@
                 <condition id="6" name="On object clicked" sid="540692749285060" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BambooMid</param>
+                    <param id="2" name="Object clicked">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="130666231454831" type="player">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="304621625365874" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
             </conditions>
             <actions>
@@ -183,13 +185,13 @@
                 <condition id="6" name="On object clicked" sid="865833645061480" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BambooMid</param>
+                    <param id="2" name="Object clicked">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="159760561665456" type="player">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="789328540903164" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
             </conditions>
             <actions>
@@ -214,13 +216,14 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="101749222130325">
             <conditions>
                 <condition id="17" name="On tap object" sid="499461242710717" type="Touch">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="113602490436681" type="player">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
             </conditions>
             <actions>
@@ -242,10 +245,10 @@
         <event-block sid="446665861042314">
             <conditions>
                 <condition id="17" name="On tap object" sid="901306050111194" type="Touch">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="412169563321381" type="player">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
             </conditions>
             <actions>
@@ -261,13 +264,13 @@
         <event-block sid="571596231577463">
             <conditions>
                 <condition id="17" name="On tap object" sid="250108080631945" type="Touch">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="567028175192161" type="player">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="176697603893387" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
             </conditions>
             <actions>
@@ -283,13 +286,13 @@
         <event-block sid="504695912790947">
             <conditions>
                 <condition id="17" name="On tap object" sid="354329001480085" type="Touch">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="620397836559627" type="player">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
                 <condition id="1" inverted="1" name="Is overlapping another object" sid="921829415188065" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
             </conditions>
             <actions>
@@ -308,6 +311,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="311496826563061">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="105783557265704" type="System">
@@ -364,6 +368,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="731879888937067">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="358904535994268" type="BarriorLeft">
@@ -394,6 +399,7 @@
                 <action id="-9" name="Destroy" sid="711037318694065" type="BarriorRight" />
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="574597718783888">
             <conditions>
                 <condition id="-1" name="Every tick" sid="673061858252544" type="System" />
@@ -436,6 +442,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="432611160607320">
             <conditions>
                 <condition id="-1" name="Every tick" sid="425742533016410" type="System" />
@@ -578,6 +585,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="544315159330309">
             <conditions>
                 <condition id="-2" name="Compare Y" sid="471561774827318" type="TiledBackground">
@@ -648,6 +656,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="258796277154735">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="200208277602805" type="TiledBackground">
@@ -708,13 +717,14 @@
                 <action id="-9" name="Destroy" sid="855102594965154" type="TiledBackground5" />
             </actions>
         </event-block>
+        <comment></comment>
         <event-block sid="392346517554166">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="412519969885355" type="System">
                     <param id="0" name="Interval (seconds)">0.101</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="892333740782415" type="player">
-                    <param id="0" name="Object">BambooLeft</param>
+                    <param id="0" name="Object">BambooL</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="350146706529278" type="player">
                     <param id="0" name="Object">jumper</param>
@@ -736,7 +746,7 @@
                     <param id="0" name="Interval (seconds)">0.101</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="336557561593690" type="player">
-                    <param id="0" name="Object">BambooRight</param>
+                    <param id="0" name="Object">BambooR</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="642567794521850" type="player">
                     <param id="0" name="Object">jumper</param>
@@ -758,7 +768,7 @@
                     <param id="0" name="Interval (seconds)">0.101</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="212968015671173" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="667660367038914" type="player">
                     <param id="0" name="Object">jumper</param>
@@ -780,7 +790,7 @@
                     <param id="0" name="Interval (seconds)">0.101</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="505821794412779" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="384914957414236" type="player">
                     <param id="0" name="Object">jumper</param>
@@ -802,7 +812,7 @@
                     <param id="0" name="Interval (seconds)">0.101</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="711449905216688" type="player">
-                    <param id="0" name="Object">BambooMid</param>
+                    <param id="0" name="Object">BambooM</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="558884527608459" type="player">
                     <param id="0" name="Object">jumper</param>
@@ -829,13 +839,13 @@
                 <event-block any="1" disabled="1" sid="634188645321375">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="631171278503241" type="player">
-                            <param id="0" name="Object">BambooLeft</param>
+                            <param id="0" name="Object">BambooL</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="883607445457204" type="player">
-                            <param id="0" name="Object">BambooMid</param>
+                            <param id="0" name="Object">BambooM</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="649748636807680" type="player">
-                            <param id="0" name="Object">BambooLeft</param>
+                            <param id="0" name="Object">BambooL</param>
                         </condition>
                     </conditions>
                     <actions>

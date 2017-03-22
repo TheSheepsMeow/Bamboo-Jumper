@@ -76,11 +76,11 @@
                         <x>70</x>
                         <y>479.5</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>960</height>
+                        <width>24.576000214</width>
+                        <height>2088.959960938</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>-1</hotspotX>
+                        <hotspotY>-1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -213,11 +213,11 @@
                         <x>309</x>
                         <y>480</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>960</height>
+                        <width>24.576000214</width>
+                        <height>2088.959960938</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>-1</hotspotX>
+                        <hotspotY>-1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -247,11 +247,11 @@
                         <x>551</x>
                         <y>477</y>
                         <z>0</z>
-                        <width>24</width>
-                        <height>960</height>
+                        <width>24.576000214</width>
+                        <height>2088.959960938</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>-1</hotspotX>
+                        <hotspotY>-1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
