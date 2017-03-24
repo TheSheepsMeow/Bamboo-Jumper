@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game</name>
+    <events>
+        <include>LocalStorage</include>
+        <variable constant="0" name="Score" sid="868779732750923" static="0" type="number">0</variable>
+        <variable constant="0" name="highScore" sid="528089469539994" static="0" type="number">1</variable>
+        <event-group description="" sid="809333506118279" title="Setup">
+            <sub-events>
+                <event-block sid="625932686686482">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="345004537677842">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="417424252925228" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="883268911895988" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="356401086809350" type="Score">
+                            <param id="0" name="Text">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="223618276499787">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="542201243086701" type="System" />
+                        <condition id="-12" name="Repeat" sid="366897491219404" type="System">
+                            <param id="0" name="Count">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="483387959932141" type="System">
+                            <param id="0" name="Object to create">Star</param>
+                            <param id="1" name="Layer">&quot;BG&quot;</param>
+                            <param id="2" name="X">random(0,LayoutWidth)</param>
+                            <param id="3" name="Y">random(0, 480)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="455611317068538" type="Star">
+                            <param id="0" name="Scale">random(0.2,0.5)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="355843279268127">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="382084768681822">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="716241034727789">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="473461637230477" title="Red Panda">
+            <sub-events>
+                <event-block sid="820138665617129">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="535916871038684">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="192079347730520" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="421349144438074" type="PlayerAnimations">
+                            <param id="0" name="X">player.X</param>
+                            <param id="1" name="Y">player.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="857766818144567" type="PlayerAnimations">
+                            <param id="0" name="Pin to">player</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="434833677975854">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="367743731186658" title="Controls">
+            <sub-events>
+                <event-block sid="134503537904814">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="227296306949784">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="421863464765345" type="Touch">
+                            <param id="0" name="Object">BambooL</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="604358689446260" type="Audio">
+                            <param id="0" name="Audio file">Leftbamboo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="113228283076468" type="jumper" />
+                        <action id="-3" name="Create object" sid="745475023703097" type="System">
+                            <param id="0" name="Object to create">jumper</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BambooL.x</param>
+                            <param id="3" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="154334787125897">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="129612465254178" type="Touch">
+                            <param id="0" name="Object">BambooM</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="180472258219458" type="Audio">
+                            <param id="0" name="Audio file">Midbamboo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="722020743921063" type="jumper" />
+                        <action id="-3" name="Create object" sid="788083861047107" type="System">
+                            <param id="0" name="Object to create">jumper</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BambooM.X</param>
+                            <param id="3" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="867999469093121">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="855861964852654" type="Touch">
+                            <param id="0" name="Object">BambooR</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="307045765307753" type="Audio">
+                            <param id="0" name="Audio file">Rightbamboo</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="771381948059589" type="jumper" />
+                        <action id="-3" name="Create object" sid="598457625547180" type="System">
+                            <param id="0" name="Object to create">jumper</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BambooR.X</param>
+                            <param id="3" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="157774662754440">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="367774314476423" title="Losing">
+            <sub-events>
+                <event-block sid="988502286361233">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="382014121700716">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="471001434606995">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="236850751863905" type="player">
+                            <param id="0" name="Object">Coconut</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="173630484918601" type="PlayerAnimations">
+                            <param id="0" name="Animation">&quot;Lose&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="590477775632091" type="PlayerAnimations">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="633396064577543" type="FadeBlack" />
+                        <action id="0" name="Play" sid="620479126861466" type="Audio">
+                            <param id="0" name="Audio file">DeathSound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="505257440532992" type="player">
+                            <param id="0" name="Object">Particles2</param>
+                            <param id="1" name="Layer">&quot;FG&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="256821479474032" type="player" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="299681718886303">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="101342254649133" type="Coconut">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">player.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="545976061109153" type="PlayerAnimations">
+                                    <param id="0" name="Vector Y">-400</param>
+                                </action>
+                                <action behavior="Rotate" id="0" name="Set speed" sid="107258115204886" type="PlayerAnimations">
+                                    <param id="0" name="Speed">-180</param>
+                                </action>
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="400399253885374" type="PlayerAnimations">
+                                    <param id="0" name="Acceleration">60</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="907598464206032">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="397435273437545" type="Coconut">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">player.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="376676611640905" type="PlayerAnimations">
+                                    <param id="0" name="Vector Y">-400</param>
+                                </action>
+                                <action behavior="Rotate" id="0" name="Set speed" sid="686091790170893" type="PlayerAnimations">
+                                    <param id="0" name="Speed">180</param>
+                                </action>
+                                <action behavior="Rotate" id="1" name="Set acceleration" sid="957769074716100" type="PlayerAnimations">
+                                    <param id="0" name="Acceleration">-60</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="218107290759110">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="518967748398547" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="782336133670398" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action disabled="1" id="-2" name="Go to layout" sid="772554874189579" type="System">
+                                    <param id="0" name="Layout">Title</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="916116232556491" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="265841209219335" type="System">
+                                    <param id="0" name="Layer">&quot;End&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="553472231276386" type="System">
+                                    <param id="0" name="Object">restartButton</param>
+                                    <param id="1" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-14" name="Set object time scale" sid="656306818633956" type="System">
+                                    <param id="0" name="Object">titleButton</param>
+                                    <param id="1" name="Time scale">1.0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="634924549238465">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="759358412358624" title="End">
+            <sub-events>
+                <event-block sid="719506712754704">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="881680718922042" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="128136556812417" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="178465340308995">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="999840819462073" type="Touch">
+                            <param id="0" name="Object">restartButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="157799152530828" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="654440373774588" type="System" />
+                        <action id="-21" name="Reset global variables" sid="338768241637592" type="System" />
+                        <action id="-13" name="Set time scale" sid="307653355957038" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="802497185062610">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="489777157587051" type="Touch">
+                            <param id="0" name="Object">titleButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="217671846508419" type="System">
+                            <param id="0" name="Layer">&quot;End&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="341579079375583" type="System">
+                            <param id="0" name="Time scale">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="248401434140424" type="System">
+                            <param id="0" name="Layout">Title</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="288380595552939">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="523159646646345">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="986082695288094" title="Coconuts">
+            <sub-events>
+                <event-block sid="712485105152322">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="559217505881984">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="444995636489701" type="System">
+                            <param id="0" name="First value">Coconut.Count</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="932851431017741">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="534965464484939" type="System">
+                                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="509135552262952" type="Spawnerleft">
+                                    <param id="0" name="Object">Coconut</param>
+                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="460280953090158">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="414727431048595" type="System">
+                                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="249831071096422" type="spawnerMid">
+                                    <param id="0" name="Object">Coconut</param>
+                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="773417234008717">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="947752481709377" type="System">
+                                    <param id="0" name="Interval (seconds)">choose(1,2,3,4)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="351900255320709" type="SpawnerRight">
+                                    <param id="0" name="Object">Coconut</param>
+                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="417958865735752">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="458407014962748" type="Coconut" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="543682726734764" type="Coconut">
+                            <param id="0" name="Angle">random(0,360)</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="764904313912702" type="Coconut">
+                            <param id="0" name="Speed">random(-100,100)</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="632115906880917" type="Coconut">
+                            <param id="0" name="Scale">random(0.75,1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="841200014659669">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="769881375034600" title="Jumper">
+            <sub-events>
+                <event-block sid="953428885897106">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="931640605984358">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="378458312377896">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="270387200928068" type="player">
+                            <param id="0" name="Object">jumper</param>
+                        </condition>
+                        <condition id="-1" name="Every tick" sid="665171674047913" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="444903468227961" type="player">
+                            <param id="0" name="Distance">10</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="363606654898489" type="player">
+                            <param id="0" name="X">jumper.X</param>
+                            <param id="1" name="Y">jumper.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="127017456746140">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="593504985160783" title="Bamboo">
+            <sub-events>
+                <event-block sid="621453397856815">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="993418503487867">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="664537901648126" type="Bamboo" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="182202844568947" type="Bamboo">
+                            <param id="0" name="Frame number">choose(0,1,2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121615601713993">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="764922691048300" type="Bamboo">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">LayoutHeight + 280</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="620449190186746" type="Bamboo">
+                            <param id="0" name="Y">-320</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="560027817138647">
+                    <conditions />
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="706597723725808" type="Bamboo">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="476042940263832">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="771750393268752" type="BambooMG" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="287273875419396" type="BambooMG">
+                            <param id="0" name="Frame number">choose(0,1,2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="462956466818814">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="488776451178617" type="BambooMG">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">LayoutHeight +280</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="591831987865619" type="BambooMG">
+                            <param id="0" name="Y">-320</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="778749745044023">
+                    <conditions />
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="528307525049002" type="BambooMG">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">2.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="577354748908355">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="585616210998803">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="528680448136549">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="661379751981002" title="Background">
+            <sub-events>
+                <event-block sid="573174408065985">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="623066356374037">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="828638266642187">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="639004696864972" type="System" />
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-23" name="Move at angle" sid="356034314428894" type="TiledBackground">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="905913306091917" type="TiledBackground2">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="696663821597362" type="TiledBackground3">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="913693653458163" type="TiledBackground4">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="398862688772401" type="TiledBackground5">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="248393251920628">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="871428291021589" type="System">
+                            <param id="0" name="Interval (seconds)">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="376105207142629" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="537353586245293" type="System">
+                            <param id="0" name="Object to create">TiledBackground</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-3</param>
+                            <param id="3" name="Y">-1706</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="302361167199894">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="310373863312418" type="System">
+                            <param id="0" name="Interval (seconds)">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="300024310192031" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1000</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="126295011949135" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="622537423407081" type="System">
+                            <param id="0" name="Object to create">TiledBackground2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-3</param>
+                            <param id="3" name="Y">-1706</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="814919427596632">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="944112240640518" type="System">
+                            <param id="0" name="Interval (seconds)">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="333233106437370" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2000</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="192546590465094" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="932008248246454" type="System">
+                            <param id="0" name="Object to create">TiledBackground3</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-3</param>
+                            <param id="3" name="Y">-1706</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="778518119802525">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="864530394668120" type="System">
+                            <param id="0" name="Interval (seconds)">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="856672211532492" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3000</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="730370958795534" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">4000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="559405541385089" type="System">
+                            <param id="0" name="Object to create">TiledBackground4</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-3</param>
+                            <param id="3" name="Y">-1706</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="907263023811708">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="486553931418475" type="System">
+                            <param id="0" name="Interval (seconds)">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="860536771356460" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">4000</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="975406258193498" type="System">
+                            <param id="0" name="Object to create">TiledBackground5</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-3</param>
+                            <param id="3" name="Y">-1706</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="528538523615964">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="584842190781053" type="TiledBackground">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="737140879425946" type="TiledBackground">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="525704889325493">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="930796340802308" type="TiledBackground2">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="560454990857086" type="TiledBackground2">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="972512467677212">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="625899324312112" type="TiledBackground3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="453205307958214" type="TiledBackground3">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="290330205430461">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="247169759223725" type="TiledBackground4">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="994976284194482" type="TiledBackground4">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="458680488251637">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="898647333787304" type="TiledBackground5">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">438</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="673332167718823" type="TiledBackground5">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment></comment>
+                <event-block sid="374406953039315">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="240045937515571" type="TiledBackground">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="423639764536784" type="TiledBackground" />
+                    </actions>
+                </event-block>
+                <event-block sid="855325856555942">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="762622304527614" type="TiledBackground2">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="280496374907579" type="TiledBackground2" />
+                    </actions>
+                </event-block>
+                <event-block sid="476171885519287">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="400645757314253" type="TiledBackground3">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="382437883471448" type="TiledBackground3" />
+                    </actions>
+                </event-block>
+                <event-block sid="835555710875702">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="932777303262929" type="TiledBackground4">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="994978026241807" type="TiledBackground4" />
+                    </actions>
+                </event-block>
+                <event-block sid="990459916739992">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="782089994400318" type="TiledBackground5">
+                            <param id="0" name="Instance variable">disroy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="956673759536008" type="TiledBackground5" />
+                    </actions>
+                </event-block>
+                <event-block sid="625808783254073">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="857733740140638" title="Cleanup">
+            <sub-events>
+                <event-block sid="697650846732504">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <comment></comment>
+                <event-block sid="262746155056826">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="804458811683205" type="Coconut">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">LayoutHeight+100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="783752451116924" type="Coconut" />
+                    </actions>
+                </event-block>
+                <event-block sid="530969294345852">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="165793098671893">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="465326550541287" title="Group10">
+            <sub-events>
+                <event-block sid="116375144613606">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="581334512266506">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="742785936002901">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="268312789840238" title="Group11">
+            <sub-events>
+                <event-block sid="153137312575106">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="959370993943790">
+                    <conditions />
+                    <actions />
+                </event-block>
+                <event-block sid="643942016515017">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
