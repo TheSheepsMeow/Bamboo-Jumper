@@ -2,7 +2,7 @@
 <c2layout>
     <name>Game</name>
     <sid>464209801128605</sid>
-    <event-sheet>Game Event</event-sheet>
+    <event-sheet>Game</event-sheet>
     <size>
         <width>640</width>
         <height>960</height>
@@ -15,8 +15,8 @@
     <layers>
         <layer name="BG" sid="365177438595820">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
+            <background-color>153,204,0</background-color>
+            <transparent>0</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>
@@ -37,14 +37,34 @@
                     <instance-variables>
                         <disroy>0</disroy>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade2">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-3</x>
-                        <y>-1215</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>1706</height>
+                        <width>640</width>
+                        <height>960</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -60,14 +80,34 @@
                     <instance-variables>
                         <disroy>0</disroy>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade2">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-748</x>
-                        <y>-215</y>
+                        <x>28</x>
+                        <y>18</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>1706</height>
+                        <width>591</width>
+                        <height>921</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -83,14 +123,34 @@
                     <instance-variables>
                         <disroy>0</disroy>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade2">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-711</x>
-                        <y>-203</y>
+                        <x>57</x>
+                        <y>43</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>1706</height>
+                        <width>532</width>
+                        <height>867</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -106,14 +166,34 @@
                     <instance-variables>
                         <disroy>0</disroy>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade2">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-708</x>
-                        <y>-131</y>
+                        <x>83</x>
+                        <y>76</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>1706</height>
+                        <width>473</width>
+                        <height>804</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -129,17 +209,944 @@
                     <instance-variables>
                         <disroy>0</disroy>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade2">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-722</x>
-                        <y>-85</y>
+                        <x>92</x>
+                        <y>98</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>1706</height>
+                        <width>435</width>
+                        <height>747</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="MG" sid="548107871418780">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BambooMG" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>865</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="47">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>556</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>247</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="49">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>-63</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="50">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>-373</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>494</x>
+                        <y>865</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="52">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>494</x>
+                        <y>556</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>494</x>
+                        <y>247</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="54">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>494</x>
+                        <y>-63</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="55">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>494</x>
+                        <y>-373</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="56">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>615</x>
+                        <y>865</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="57">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>615</x>
+                        <y>556</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="58">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>615</x>
+                        <y>247</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="59">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>615</x>
+                        <y>-63</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="60">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>615</x>
+                        <y>-373</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="61">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>16</x>
+                        <y>865</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="62">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>16</x>
+                        <y>556</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>16</x>
+                        <y>247</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="64">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>16</x>
+                        <y>-63</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooMG" uid="65">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>16</x>
+                        <y>-373</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>391</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.49360615</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="playerAbility" uid="86">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.4</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>986</x>
+                        <y>-61</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="FG" sid="190971560557065">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BambooL" uid="44">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>79.635505676</x>
+                        <y>241</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooM" uid="45">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>318.635498047</x>
+                        <y>241.5</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooR" uid="46">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560.635498047</x>
+                        <y>238.5</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooL" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>79.364501953</x>
+                        <y>-278</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooM" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>318.364501953</x>
+                        <y>-277</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooR" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560.364501953</x>
+                        <y>-280</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooL" uid="15">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>79.364501953</x>
+                        <y>764</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooM" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>318.364501953</x>
+                        <y>764</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BambooR" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560.364501953</x>
+                        <y>761</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>544</height>
+                        <depth>0</depth>
+                        <hotspotX>0.609375</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -163,108 +1170,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BambooMid" uid="6">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>317.270568848</x>
-                        <y>480</y>
-                        <z>0</z>
-                        <width>86.541137695</width>
-                        <height>960</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BambooLeft" uid="22">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>78.270568848</x>
-                        <y>479.5</y>
-                        <z>0</z>
-                        <width>86.541137695</width>
-                        <height>965</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BambooRight" uid="0">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Flash" />
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>559.270507813</x>
-                        <y>477</y>
-                        <z>0</z>
-                        <width>86.541137695</width>
-                        <height>960</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="destroyer" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -276,9 +1181,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>823.846191406</y>
+                        <y>1049</y>
                         <z>0</z>
-                        <width>648</width>
+                        <width>812</width>
                         <height>44</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -287,7 +1192,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BarriorLeft" uid="3">
+                <instance type="Coconut" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -305,86 +1210,38 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-580</x>
-                        <y>75</y>
-                        <z>0</z>
-                        <width>93</width>
-                        <height>13</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BarriorMid" uid="4">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
+                        <behavior-instance type="Rotate">
                             <properties>
-                                <speed>0</speed>
+                                <speed>180</speed>
                                 <acceleration>0</acceleration>
-                                <gravity>50</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-364</x>
-                        <y>123</y>
+                        <x>320</x>
+                        <y>-62</y>
                         <z>0</z>
-                        <width>93</width>
-                        <height>13</height>
+                        <width>124</width>
+                        <height>117</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BarriorRight" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>0</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>50</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>No</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-100</x>
-                        <y>270</y>
-                        <z>0</z>
-                        <width>93</width>
-                        <height>13</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>0.504273534</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -400,7 +1257,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>317</x>
-                        <y>381</y>
+                        <y>726</y>
                         <z>0</z>
                         <width>74</width>
                         <height>80</height>
@@ -418,11 +1275,14 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>70</x>
-                        <y>2</y>
+                        <y>-275</y>
                         <z>0</z>
                         <width>57</width>
                         <height>50</height>
@@ -440,11 +1300,14 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>312</x>
-                        <y>0</y>
+                        <y>-360</y>
                         <z>0</z>
                         <width>58</width>
                         <height>58</height>
@@ -462,11 +1325,14 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>552</x>
-                        <y>4</y>
+                        <y>-271</y>
                         <z>0</z>
                         <width>58</width>
                         <height>58</height>
@@ -480,17 +1346,17 @@
                 <instance type="Particles2" uid="31">
                     <properties>
                         <rate>250</rate>
-                        <spray-cone>360</spray-cone>
+                        <spray-cone>270</spray-cone>
                         <type>One-shot</type>
                         <initial-particle-properties></initial-particle-properties>
-                        <speed>200</speed>
+                        <speed>100</speed>
                         <size>20</size>
                         <opacity>100</opacity>
                         <grow-rate>0</grow-rate>
                         <x-randomiser>10</x-randomiser>
                         <y-randomiser>10</y-randomiser>
-                        <speed-randomiser->0</speed-randomiser->
-                        <size-randomiser>0</size-randomiser>
+                        <speed-randomiser->100</speed-randomiser->
+                        <size-randomiser>5</size-randomiser>
                         <grow-rate-randomiser>0</grow-rate-randomiser>
                         <particle-lifetime-properties></particle-lifetime-properties>
                         <acceleration>-150</acceleration>
@@ -504,8 +1370,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-277</x>
-                        <y>382</y>
+                        <x>1035</x>
+                        <y>335</y>
                         <z>0</z>
                         <width>128</width>
                         <height>128</height>
@@ -516,7 +1382,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite5" uid="32">
+                <instance type="rester2" uid="40">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -526,109 +1392,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>777</x>
-                        <y>478.5</y>
+                        <x>-550</x>
+                        <y>-492</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>993</height>
+                        <width>656</width>
+                        <height>39</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.496031731</hotspotX>
+                        <hotspotY>0.358974367</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Score" uid="33">
-                    <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Score</text>
-                        <scale>1</scale>
-                        <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>762</x>
-                        <y>7</y>
-                        <z>0</z>
-                        <width>119</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="SpriteFont2" uid="34">
-                    <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>Hieght:</text>
-                        <scale>1</scale>
-                        <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>654</x>
-                        <y>7</y>
-                        <z>0</z>
-                        <width>113</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite6" uid="37">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>1.5</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>No</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-467</x>
-                        <y>400</y>
-                        <z>0</z>
-                        <width>662</width>
-                        <height>1019</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0</opacity>
                     </world>
                 </instance>
                 <instance type="player" uid="38">
@@ -656,11 +1429,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>317</x>
-                        <y>382</y>
+                        <x>320</x>
+                        <y>1365</y>
                         <z>0</z>
-                        <width>74</width>
-                        <height>80</height>
+                        <width>100</width>
+                        <height>100</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -668,7 +1441,264 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="rester2" uid="40">
+                <instance type="PlayerAnimations" uid="0">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>0</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-174</x>
+                        <y>836</y>
+                        <z>0</z>
+                        <width>105</width>
+                        <height>306</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504761934</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="berryBig" uid="96">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>150</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>180</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>432</x>
+                        <y>-91</y>
+                        <z>0</z>
+                        <width>74.422218323</width>
+                        <height>70.220962524</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504273534</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="berrySmall" uid="98">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>0</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>300</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Rotate">
+                            <properties>
+                                <speed>180</speed>
+                                <acceleration>0</acceleration>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>330</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1500</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>580.727050781</x>
+                        <y>-91.082305908</y>
+                        <z>0</z>
+                        <width>33.454139709</width>
+                        <height>31.565599442</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.504273534</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Fade" sid="520791383037433">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="FadeBlack" uid="37">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1.5</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>317</x>
+                        <y>489</y>
+                        <z>0</z>
+                        <width>662</width>
+                        <height>1019</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="FadeStart" uid="95">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>325.5</x>
+                        <y>490</y>
+                        <z>0</z>
+                        <width>675</width>
+                        <height>998</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="End" sid="188646516156755">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="muteButton" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -678,14 +1708,250 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-5</x>
-                        <y>-492</y>
+                        <x>208</x>
+                        <y>-43</y>
                         <z>0</z>
-                        <width>656</width>
-                        <height>39</height>
+                        <width>58.5</width>
+                        <height>33.75</height>
                         <depth>0</depth>
-                        <hotspotX>0.496031731</hotspotX>
-                        <hotspotY>0.358974367</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.51111114</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="homeButton" uid="82">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>335</x>
+                        <y>-42</y>
+                        <z>0</z>
+                        <width>48</width>
+                        <height>48</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="endBG" uid="83">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>720</x>
+                        <y>720</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>960</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="restartButton" uid="84">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>322</x>
+                        <y>745</y>
+                        <z>0</z>
+                        <width>196</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="titleButton" uid="85">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>322</x>
+                        <y>533</y>
+                        <z>0</z>
+                        <width>196</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PandaFall" uid="87">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>50</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>320</x>
+                        <y>-170</y>
+                        <z>0</z>
+                        <width>184</width>
+                        <height>124</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="UI" sid="820483346861063">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="tiledBG" uid="97">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Center</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>324</x>
+                        <y>1073</y>
+                        <z>0</z>
+                        <width>650</width>
+                        <height>43.452747345</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.400000006</opacity>
+                    </world>
+                </instance>
+                <instance type="Pause" uid="94">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-64</x>
+                        <y>-64</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="scoreBG" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>322</x>
+                        <y>958</y>
+                        <z>0</z>
+                        <width>643.89440918</width>
+                        <height>80.486801147</height>
+                        <depth>0</depth>
+                        <hotspotX>0.503125012</hotspotX>
+                        <hotspotY>0.550000012</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Score" uid="33">
+                    <properties>
+                        <character-width>16</character-width>
+                        <character-height>16</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Score</text>
+                        <scale>2</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>320</x>
+                        <y>937.771240234</y>
+                        <z>0</z>
+                        <width>403.234008789</width>
+                        <height>44.457515717</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
