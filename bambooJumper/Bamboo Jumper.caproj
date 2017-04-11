@@ -357,7 +357,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590087330861334" speed="5">
+                <animation framecount="4" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="590087330861334" speed="15">
                     <frame duration="1" hotspotX="0.504762" hotspotY="0.5">
                         <image-point name="Imagepoint 1" x="0.52381" y="0.326797" />
                         <collision-poly>
