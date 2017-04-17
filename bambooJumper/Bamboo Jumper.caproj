@@ -2,7 +2,7 @@
 <c2project>
     <name>Bamboo Jumper</name>
     <description></description>
-    <version>0.2</version>
+    <version>0.3</version>
     <author>The Sheep&apos;s Meow</author>
     <author-email>community@thesheepsmeow.com</author-email>
     <author-website>http://www.thesheepsmeow.com</author-website>
@@ -498,14 +498,19 @@
         </object-type>
         <object-type name="menuButton" sid="752548588137864">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="143151990702051">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647432433465063" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\Play_01.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\Play_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\Play_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\Play_02.png" />
                 </animation>
                 <animation framecount="2" loop="1" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="518466975869806" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\PlayPRESSED_01.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\PlayPRESSED_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\PlayPRESSED_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\Title\PlayPRESSED_02.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -620,8 +625,10 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757707271031411" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\End\PandaFall.png">
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757707271031411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\ART\PandaFall1.png">
+                        <image-point name="Imagepoint 1" x="0.777174" y="0.395161" />
+                        <image-point name="Imagepoint 2" x="0.86413" y="0.475806" />
                         <collision-poly>
                             <point x="0.320652" y="0.475806" />
                             <point x="0.5" y="0.233871" />
@@ -634,6 +641,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\Final_Menus\End\PandaFall2.png">
+                        <image-point name="Imagepoint 1" x="0.788043" y="0.387097" />
+                        <image-point name="Imagepoint 2" x="0.875" y="0.467742" />
                         <collision-poly>
                             <point x="0.336957" y="0.5" />
                             <point x="0.5" y="0.217742" />
@@ -644,6 +653,14 @@
                             <point x="0.157609" y="0.766129" />
                             <point x="0.0434783" y="0.5" />
                         </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\ART\PandaFall2.png">
+                        <image-point name="Imagepoint 1" x="0.777174" y="0.41129" />
+                        <image-point name="Imagepoint 2" x="0.869565" y="0.483871" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\ART\PandaFall1.png">
+                        <image-point name="Imagepoint 1" x="0.793478" y="0.379032" />
+                        <image-point name="Imagepoint 2" x="0.875" y="0.467742" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -889,7 +906,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591472127923369" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504274" original-source="C:\Users\brian\Downloads\Coconut.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\ART\Cherry.png">
                         <collision-poly>
                             <point x="0.201613" y="0.213675" />
                             <point x="0.5" y="0.0769231" />
@@ -919,7 +936,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424974252668391" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504274" original-source="C:\Users\brian\Downloads\Coconut.png">
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.505376" original-source="D:\MEOW\Bamboo-Jumper\ART\Pineapple.png">
                         <collision-poly>
                             <point x="0.201613" y="0.213675" />
                             <point x="0.5" y="0.0769231" />
@@ -991,6 +1008,30 @@
                             <point x="0.5" y="0.75" />
                             <point x="0.277778" y="0.722222" />
                             <point x="0.194444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Panda_Tear" sid="445122775960391">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="974637217406240">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="796420426268361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MEOW\Bamboo-Jumper\ART\Panda_Tear.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

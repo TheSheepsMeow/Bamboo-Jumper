@@ -6,6 +6,7 @@
         <include>LocalStorage</include>
         <variable constant="0" name="Score" sid="868779732750923" static="0" type="number">0</variable>
         <variable constant="0" name="highScore" sid="528089469539994" static="0" type="number">1</variable>
+        <variable constant="0" name="canAbility" sid="223068765241242" static="0" type="number">1</variable>
         <event-group description="" sid="809333506118279" title="Score Display">
             <sub-events>
                 <event-block sid="625932686686482">
@@ -78,14 +79,30 @@
                         <condition id="3" name="On touched object" sid="101732658401697" type="Touch">
                             <param id="0" name="Object">PlayerAnimations</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="494479982142393" type="System">
+                            <param id="0" name="Variable">canAbility</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="475881843001021" type="System">
+                            <param id="0" name="Variable">canAbility</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="0" name="Spawn another object" sid="984901270261033" type="PlayerAnimations">
                             <param id="0" name="Object">playerAbility</param>
                             <param id="1" name="Layer">&quot;game&quot;</param>
                             <param id="2" name="Image point">1</param>
                         </action>
                         <action id="-25" name="Move to bottom" sid="433315736451366" type="playerAbility" />
+                        <action id="-16" name="Wait" sid="969270007744510" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="233073585576912" type="System">
+                            <param id="0" name="Variable">canAbility</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="957243871925036">
@@ -776,36 +793,68 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="980294852510261">
+                        <event-block sid="453572912389866">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="485548939170214" type="System" />
+                                <condition id="3" name="Compare frame" sid="107651751117233" type="PandaFall">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
+                                <condition id="-4" name="Trigger once while true" sid="254451774379110" type="System" />
+                                <condition id="-8" name="Compare two values" sid="693664819686023" type="System">
+                                    <param id="0" name="First value">choose(1,2)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-4" name="Set layer visible" sid="624697546659405" type="System">
+                                <action id="0" name="Spawn another object" sid="774719760985957" type="PandaFall">
+                                    <param id="0" name="Object">Panda_Tear</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="861849064762054" type="Panda_Tear">
+                                    <param id="0" name="Angle">random(240,260)</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="843919323963992" type="PandaFall">
+                                    <param id="0" name="Object">Panda_Tear</param>
+                                    <param id="1" name="Layer">Self.LayerNumber</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="668056658055168" type="Panda_Tear">
+                                    <param id="0" name="Angle">random(280,300)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="405771776480424">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="209163978346871" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="997167486629744" type="System">
                                     <param id="0" name="Layer">&quot;game&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-4" name="Set layer visible" sid="330177060751952" type="System">
+                                <action id="-4" name="Set layer visible" sid="852544220602155" type="System">
                                     <param id="0" name="Layer">&quot;FG&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action disabled="1" id="-4" name="Set layer visible" sid="891869226638567" type="System">
+                                <action disabled="1" id="-4" name="Set layer visible" sid="348860805874383" type="System">
                                     <param id="0" name="Layer">&quot;MG&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
-                                <action id="-14" name="Set object time scale" sid="593133747984890" type="System">
+                                <action id="-14" name="Set object time scale" sid="895590071154984" type="System">
                                     <param id="0" name="Object">FadeBlack</param>
                                     <param id="1" name="Time scale">1.0</param>
                                 </action>
-                                <action id="-14" name="Set object time scale" sid="753311944808033" type="System">
+                                <action id="-14" name="Set object time scale" sid="105022905685372" type="System">
                                     <param id="0" name="Object">Star</param>
                                     <param id="1" name="Time scale">1.0</param>
                                 </action>
-                                <action id="-14" name="Set object time scale" sid="218592311504381" type="System">
+                                <action id="-14" name="Set object time scale" sid="460221173212959" type="System">
                                     <param id="0" name="Object">Star2</param>
                                     <param id="1" name="Time scale">1.0</param>
                                 </action>
-                                <action id="-14" name="Set object time scale" sid="652551887544826" type="System">
+                                <action id="-14" name="Set object time scale" sid="534110234669152" type="System">
                                     <param id="0" name="Object">Star3</param>
                                     <param id="1" name="Time scale">1.0</param>
                                 </action>
@@ -814,8 +863,18 @@
                     </sub-events>
                 </event-block>
                 <event-block sid="905290725247729">
-                    <conditions />
-                    <actions />
+                    <conditions>
+                        <condition id="-18" name="On created" sid="180867405660988" type="Panda_Tear" />
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="266362349856230" type="System">
+                            <param id="0" name="Object">Panda_Tear</param>
+                            <param id="1" name="Time scale">1.0</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="380648512136796" type="Panda_Tear">
+                            <param id="0" name="Scale">random(0.4,0.4)</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <comment></comment>
                 <event-block sid="690278149711324">
@@ -1326,6 +1385,17 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="346050716691817" type="berrySmall" />
+                    </actions>
+                </event-block>
+                <event-block sid="549594012868472">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="407338312652326" type="Panda_Tear">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">-100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="743694587247777" type="Panda_Tear" />
                     </actions>
                 </event-block>
                 <event-block sid="530969294345852">
