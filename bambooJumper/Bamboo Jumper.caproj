@@ -2,10 +2,10 @@
 <c2project>
     <name>Bamboo Jumper</name>
     <description></description>
-    <version>0.3</version>
+    <version>0.4</version>
     <author>The Sheep&apos;s Meow</author>
-    <author-email>community@thesheepsmeow.com</author-email>
-    <author-website>http://www.thesheepsmeow.com</author-website>
+    <author-email>games@thesheepsmeow.com</author-email>
+    <author-website>http://www.thesheepsmeow.com/html5</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1vxx6ibujw10n</unique-id>
     <saved-with-version>23900</saved-with-version>
@@ -1037,6 +1037,24 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="plus1" sid="972669432161419">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="931517601828181">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="plus2" sid="177465964359410">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="286184928206641">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="Bamboo" plugin-id="Sprite" sid="731006511892791">
@@ -1130,8 +1148,35 @@
         <file name="StartButtonClick.ogg" />
         <file name="DeathSound.m4a" />
         <file name="DeathSound.ogg" />
+        <file name="Cherry Pickup sound.m4a" />
+        <file name="Cherry Pickup sound.ogg" />
+        <file name="Coconut hit 2.m4a" />
+        <file name="Coconut hit 2.ogg" />
+        <file name="Coconut hit.m4a" />
+        <file name="Coconut hit.ogg" />
+        <file name="Hitting Coconut (No Rever.m4a" />
+        <file name="Hitting Coconut (No Rever.ogg" />
+        <file name="Hitting Coconut.m4a" />
+        <file name="Hitting Coconut.ogg" />
+        <file name="Jumping Cut.m4a" />
+        <file name="Jumping Cut.ogg" />
+        <file name="Jumping.m4a" />
+        <file name="Jumping.ogg" />
+        <file name="Pinnapple pickup sound.m4a" />
+        <file name="Pinnapple pickup sound.ogg" />
+        <file name="Running Sound.m4a" />
+        <file name="Running Sound.ogg" />
+        <file name="Shiled defliction.m4a" />
+        <file name="Shiled defliction.ogg" />
+        <file name="Squish Bug Sound (Reverb).m4a" />
+        <file name="Squish Bug Sound (Reverb).ogg" />
+        <file name="Squish Bug Sound.m4a" />
+        <file name="Squish Bug Sound.ogg" />
     </sounds-folder>
-    <music-folder />
+    <music-folder>
+        <file name="Bamboo Jumper gamplay BGM edit.m4a" />
+        <file name="Bamboo Jumper gamplay BGM edit.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
