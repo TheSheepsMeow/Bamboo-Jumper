@@ -1172,11 +1172,10 @@
         <file name="Squish Bug Sound (Reverb).ogg" />
         <file name="Squish Bug Sound.m4a" />
         <file name="Squish Bug Sound.ogg" />
-    </sounds-folder>
-    <music-folder>
         <file name="Bamboo Jumper gamplay BGM edit.m4a" />
         <file name="Bamboo Jumper gamplay BGM edit.ogg" />
-    </music-folder>
+    </sounds-folder>
+    <music-folder />
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

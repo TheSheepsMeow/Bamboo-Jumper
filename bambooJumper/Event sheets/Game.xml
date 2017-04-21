@@ -68,7 +68,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="904254413884855" title="Panda Effect">
+        <event-group description="" sid="904254413884855" title="Panda Ability">
             <sub-events>
                 <event-block sid="622992224777286">
                     <conditions />
@@ -161,7 +161,7 @@
                             <param id="0" name="State">1</param>
                         </action>
                         <action behavior="Rotate" id="0" name="Set speed" sid="791875590734070" type="Coconut">
-                            <param id="0" name="Speed">choose(-150,150)</param>
+                            <param id="0" name="Speed">choose(-450,450)</param>
                         </action>
                         <action behavior="Platform" disabled="1" id="8" name="Set vector X" sid="167589186671478" type="Coconut">
                             <param id="0" name="Vector X">choose(-500,500)</param>
@@ -722,19 +722,6 @@
                             <param id="0" name="State">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="633396064577543" type="FadeBlack" />
-                        <action id="7" name="Play (by name)" sid="378177336777634" type="Audio">
-                            <param id="0" name="Folder">0</param>
-                            <param id="1" name="Audio file name">choose(&quot;Coconut hit&quot;,&quot;Hitting Coconut&quot;)</param>
-                            <param id="3" name="Loop">0</param>
-                            <param id="4" name="Volume">0</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="620479126861466" type="Audio">
-                            <param id="0" name="Audio file">DeathSound</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
                         <action id="0" name="Spawn another object" sid="505257440532992" type="player">
                             <param id="0" name="Object">Particles2</param>
                             <param id="1" name="Layer">&quot;FG&quot;</param>
@@ -790,8 +777,24 @@
                                 <condition id="-4" name="Trigger once while true" sid="518967748398547" type="System" />
                             </conditions>
                             <actions>
+                                <action id="7" name="Play (by name)" sid="378177336777634" type="Audio">
+                                    <param id="0" name="Folder">0</param>
+                                    <param id="1" name="Audio file name">choose(&quot;Coconut hit&quot;,&quot;Hitting Coconut&quot;)</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">0</param>
+                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="226835921305489" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Play" sid="620479126861466" type="Audio">
+                                    <param id="0" name="Audio file">DeathSound</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="782336133670398" type="System">
-                                    <param id="0" name="Seconds">1.5</param>
+                                    <param id="0" name="Seconds">1.3</param>
                                 </action>
                                 <action disabled="1" id="-2" name="Go to layout" sid="772554874189579" type="System">
                                     <param id="0" name="Layout">Title</param>
@@ -902,6 +905,15 @@
                         <action id="-4" name="Set layer visible" sid="710184307447190" type="System">
                             <param id="0" name="Layer">&quot;MG&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="118615957921249" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="383828104173076" type="Audio">
+                            <param id="0" name="Audio file">DeathSound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1542,7 +1554,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="336737550850937" type="Audio">
+                        <action id="0" name="Play" sid="125470044418265" type="Audio">
                             <param id="0" name="Audio file">Bamboo Jumper gamplay BGM edit</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-10</param>
