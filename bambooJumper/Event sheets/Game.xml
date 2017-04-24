@@ -26,7 +26,7 @@
                 <event-block sid="355843279268127">
                     <conditions />
                     <actions>
-                        <action id="0" name="Set text" sid="426626278658583" type="textDebug">
+                        <action disabled="1" id="0" name="Set text" sid="426626278658583" type="textDebug">
                             <param id="0" name="Text">fps</param>
                         </action>
                     </actions>
