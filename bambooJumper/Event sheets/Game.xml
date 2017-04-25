@@ -722,7 +722,7 @@
                             <param id="0" name="State">1</param>
                         </action>
                         <action behavior="Fade" id="1" name="Start fade" sid="633396064577543" type="FadeBlack" />
-                        <action id="0" name="Spawn another object" sid="505257440532992" type="player">
+                        <action disabled="1" id="0" name="Spawn another object" sid="505257440532992" type="player">
                             <param id="0" name="Object">Particles2</param>
                             <param id="1" name="Layer">&quot;FG&quot;</param>
                             <param id="2" name="Image point">0</param>
